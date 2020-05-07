@@ -71,6 +71,20 @@ class SinglyLinkedList{
 		this.length++;
 		return this;
 	}
+
+	get(index){
+		if(index < 0 || index >= this.length) return null;
+
+		let counter = 0;
+		let current = this.head;
+
+		while(counter < index){
+			current = current.next;
+			counter++;
+		}
+
+		return current;
+	}
 }
  
 const testList = new SinglyLinkedList();
@@ -91,4 +105,10 @@ console.log(testList);
 console.log(testList.unshift('hi'));
 
 console.log(testList.unshift('again'));
+console.log(testList.get(-2));
+console.log(testList.get(100));
+console.log(testList.get(0));
+console.log(testList.get(1));
+
+
 
