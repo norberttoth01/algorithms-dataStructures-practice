@@ -169,7 +169,6 @@ console.log(testList.get(1));
 console.log(testList.get(2));
 console.log(testList.get(3));
 console.log(testList.get(4));
-console.log(testList);
 
 
 
